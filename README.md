@@ -2,7 +2,7 @@
 
 # 🌾 GriTech OS
 
-### *Intelligent Scheme Discovery Platform for India's Farmers*
+### _Intelligent Scheme Discovery Platform for India's Farmers_
 
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -12,9 +12,7 @@
 
 <br/>
 
-> **"Government schemes exist. But they don't reach the farmer. Until now."**
-
-GriTech OS bridges the gap between India's 2,000+ government agricultural schemes and the 150 million+ farmers who struggle to discover, understand, and apply for them. By combining intelligent rule-based matching, multilingual support, and AI-powered assistance, GriTech OS transforms static PDFs into a living digital experience.
+GriTech OS aims to bridge the gap between India's 2,000+ government agricultural schemes and the 150 million+ farmers who struggle to discover, understand, and apply for them. By combining intelligent rule-based matching, multilingual support, and AI-powered assistance, GriTech OS transforms static PDFs into a living digital experience.
 
 <br/>
 
@@ -27,6 +25,7 @@ GriTech OS bridges the gap between India's 2,000+ government agricultural scheme
 This project was built by students of **Pune Institute of Computer Technology (PICT), Pune** from the **Artificial Intelligence & Data Science** branch.
 
 **Team Members:**
+
 1. Rudra Chintalwar
 2. Atharva Ghongade
 3. Atharv Raut
@@ -39,28 +38,33 @@ We developed GriTech OS for a **TechFest organized by Cybage Company**, with the
 ## 🌟 Key Features
 
 ### 🔍 Smart Scheme Matching
+
 - **Rule-based matching engine** that analyzes farmer profile (district, farmer type, land ownership, crops) against 2,000+ schemes
 - **Confidence scoring** — each scheme gets a match percentage based on eligibility criteria
 - **Real-time filtering** — results update dynamically as farmers change their search criteria
 
 ### 🌐 Multilingual Support (3 Languages)
+
 - **English**, **Hindi** (हिंदी), and **Marathi** (मराठी)
 - Full UI translation including landing page, dashboard, scheme details, and navigation
 - **36 Maharashtra district names** translated across all languages
 - Language selector always visible for quick switching
 
 ### 🤖 AI-Powered Chat Assistant (Krishi Saathi)
+
 - Powered by **Groq AI** for instant responses
 - Context-aware — knows the farmer's profile and matched schemes
 - Answers questions about scheme eligibility, application process, and benefits
 - Available in all 3 supported languages
 
 ### 📄 Smart Scheme Details
-- **Web scraping** (Python FastAPI backend) fetches live scheme details from government websites
+
+- Schemes displayed as per information provided by the farmer
 - PDF download of matched schemes in the farmer's preferred language
 - Direct application links to official portals
 
 ### 🔐 Authentication & Admin Panel
+
 - **Dual authentication**: Phone (OTP) and Email/Password
 - **Farmer accounts** with saved profiles synced to Firebase Firestore
 - **Admin panel** with special access code for:
@@ -69,6 +73,7 @@ We developed GriTech OS for a **TechFest organized by Cybage Company**, with the
   - Platform statistics and analytics
 
 ### 🎨 Cinematic Landing Page
+
 - **Three.js** 3D background with particle effects
 - Smooth **Framer Motion** animations and scroll reveals
 - Responsive, dark-themed UI with glassmorphism design
@@ -79,35 +84,38 @@ We developed GriTech OS for a **TechFest organized by Cybage Company**, with the
 ## 🛠️ Tech Stack
 
 ### Frontend
-| Technology | Purpose |
-|-----------|---------|
-| **React 18** | UI framework with hooks and context |
-| **TypeScript** | Type-safe development |
-| **Vite** | Lightning-fast build tool and dev server |
-| **Tailwind CSS** | Utility-first styling |
-| **Framer Motion** | Animations and transitions |
-| **Three.js** + React Three Fiber | 3D background visuals |
-| **shadcn/ui** + Radix UI | Accessible component primitives |
-| **Lucide React** | Modern icon library |
-| **Recharts** | Data visualization |
-| **jsPDF** | Client-side PDF generation |
-| **Sonner** | Toast notifications |
+
+| Technology                       | Purpose                                  |
+| -------------------------------- | ---------------------------------------- |
+| **React 18**                     | UI framework with hooks and context      |
+| **TypeScript**                   | Type-safe development                    |
+| **Vite**                         | Lightning-fast build tool and dev server |
+| **Tailwind CSS**                 | Utility-first styling                    |
+| **Framer Motion**                | Animations and transitions               |
+| **Three.js** + React Three Fiber | 3D background visuals                    |
+| **shadcn/ui** + Radix UI         | Accessible component primitives          |
+| **Lucide React**                 | Modern icon library                      |
+| **Recharts**                     | Data visualization                       |
+| **jsPDF**                        | Client-side PDF generation               |
+| **Sonner**                       | Toast notifications                      |
 
 ### Backend
-| Technology | Purpose |
-|-----------|---------|
-| **Firebase Auth** | Phone OTP + Email/Password authentication |
-| **Cloud Firestore** | NoSQL database for users, schemes, profiles |
-| **Express.js** | Node.js API server (Groq AI proxy) |
+
+| Technology           | Purpose                                      |
+| -------------------- | -------------------------------------------- |
+| **Firebase Auth**    | Phone OTP + Email/Password authentication    |
+| **Cloud Firestore**  | NoSQL database for users, schemes, profiles  |
+| **Express.js**       | Node.js API server (Groq AI proxy)           |
 | **FastAPI (Python)** | Web scraping microservice for scheme details |
-| **Groq SDK** | AI chat assistant (LLM integration) |
-| **BeautifulSoup** | HTML parsing for scheme data extraction |
+| **Groq SDK**         | AI chat assistant (LLM integration)          |
+| **BeautifulSoup**    | HTML parsing for scheme data extraction      |
 
 ### Dev Tools
-| Technology | Purpose |
-|-----------|---------|
-| **ESLint** | Code linting |
-| **Vitest** | Unit testing |
+
+| Technology                 | Purpose        |
+| -------------------------- | -------------- |
+| **ESLint**                 | Code linting   |
+| **Vitest**                 | Unit testing   |
 | **PostCSS + Autoprefixer** | CSS processing |
 
 ---
@@ -227,6 +235,7 @@ The app will be available at `http://localhost:5173`
 ## 🔑 Admin Access
 
 To access the admin panel:
+
 1. Go to the Login page
 2. Select **"Admin"** role
 3. Sign up with the special admin code: `AgroDBT7898`
@@ -257,14 +266,6 @@ To access the admin panel:
 
 ---
 
-## 📸 Screenshots
-
-| Landing Page | Scheme Matching | Results |
-|:---:|:---:|:---:|
-| Cinematic hero with 3D effects | Profile-based wizard | Ranked scheme cards |
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -277,16 +278,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
 <div align="center">
 
 **Built with ❤️ for India's Farmers**
 
-🌾 *Pune Institute of Computer Technology | AI & DS | Cybage TechFest 2026* 🌾
+🌾 _Pune Institute of Computer Technology | AI & DS | Cybage TechFest 2026_ 🌾
 
 </div>
